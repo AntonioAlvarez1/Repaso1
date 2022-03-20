@@ -51,7 +51,7 @@
             this.buttoncarga.Name = "buttoncarga";
             this.buttoncarga.Size = new System.Drawing.Size(135, 33);
             this.buttoncarga.TabIndex = 1;
-            this.buttoncarga.Text = "Carga Informacion";
+            this.buttoncarga.Text = "Calcular";
             this.buttoncarga.UseVisualStyleBackColor = true;
             this.buttoncarga.Click += new System.EventHandler(this.buttoncarga_Click);
             // 
@@ -68,14 +68,14 @@
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Location = new System.Drawing.Point(666, 28);
             this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(306, 193);
+            this.dataGridView3.Size = new System.Drawing.Size(318, 193);
             this.dataGridView3.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 379);
+            this.ClientSize = new System.Drawing.Size(1004, 379);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridHorastra);
             this.Controls.Add(this.buttoncarga);

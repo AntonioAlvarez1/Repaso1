@@ -14,6 +14,7 @@ namespace Repaso1
     {
         List<Informacion> empleados = new List<Informacion>();
         List<Trabajo> asistencias = new List<Trabajo>();
+        List<Sueldo> sueldos = new List<Sueldo>();
 
         public Form1()
         {
@@ -50,7 +51,25 @@ namespace Repaso1
         }
         private void buttoncarga_Click(object sender, EventArgs e)
         {
-            
+            for (int i = 0; i < empleados.Count; i++)
+            {
+                for (int j=0; j<asistencias.Count; j++)
+                {
+                    if(empleados[i].Numero_empleado==asistencias[j].No_empleado )
+                    {
+                        Sueldo sueldo = new Sueldo();
+                        sueldo.NoEmpleado = empleados[i].Numero_empleado;
+                        sueldo.Nombre = empleados[i].Nombre;
+                        sueldo.SueldoM = empleados[i].Sueldo * asistencias[j].Horas;
+                        sueldo.Mes = asistencias[j].Mes;
+
+                        sueldos.Add(sueldo);
+                    }
+
+                }
+            }
+            dataGridView3.DataSource = sueldos;
+            dataGridView3.Refresh();
         }
         private void cargarGrid()
         {
